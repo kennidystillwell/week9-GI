@@ -1,0 +1,65 @@
+$primary-font: 'Arial', sans-serif;
+$background-color: #f4f4f4;
+$main-color: rgb(229, 242, 246);
+$button-color: #282f30;
+$button-hover-color: #45a0a0;
+
+body {
+  font-family: $primary-font;
+  background-color: $background-color;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#image-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: $main-color;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+  color: black;
+}
+
+input, text {
+  padding: 5px;
+}
+
+input, button {
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: $button-color;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover-color;
+  }
+}
+
+#totals-section p {
+  font-weight: bold;
+  border: solid 2px black;
+  padding: 10px;
+  margin: 20px;
+  background-color: white;
+}
